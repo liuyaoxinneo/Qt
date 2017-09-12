@@ -1,0 +1,12 @@
+#ifndef DOPPLER_NET_GLOBAL_H
+#define DOPPLER_NET_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DOPPLER_NET_LIBRARY)
+#  define DOPPLER_NETSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DOPPLER_NETSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DOPPLER_NET_GLOBAL_H
